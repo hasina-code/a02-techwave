@@ -116,7 +116,7 @@ body {
 }
 
 
-/*  Hero Section */
+/*  Banner Section */
 .Banner {
   position: relative;
   min-height: 100vh;
@@ -173,7 +173,7 @@ body {
 }
 
 .title {
-  font-size: 48px;
+  font-size: 60px;
   margin-bottom: 12px;
 }
 
@@ -207,12 +207,52 @@ body {
   
 }
 
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 78, 205, 0.4);
+}
 .btn-outline {
   border: 1px solid #00ff88;
+  color: #00ff88;
   
-  color:#00ff88 ;
-
 }
+
+
+
+.about {
+  gap: 16px;
+  padding: 50px 16px;
+  text-align: center;
+}
+
+.about h2 {
+  font-size: 48px;
+ 
+}
+
+.about p {
+  opacity: 0.8;
+  line-height: 20px;
+  font-size: 16px;
+  color: #ffffff;
+  max-width: 600px;
+  margin: 0 auto 40px;
+}
+
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+}
+
+.stat {
+  font-weight: 900px;
+  line-height: 58px;
+  font-size: 48px;
+  color: #00ff88;
+}
+
+
 
 
 
@@ -245,6 +285,13 @@ body {
       font-size: 14px;
     }
 
+
+        .stats {
+          grid-template-columns: repeat(2, 1fr);
+          gap: 16px;
+        }
+    
+      
  
 }
 
@@ -259,5 +306,10 @@ body {
   .hamburger {
     display: none;
   }
+
+    .stats {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+    }
 }
 
