@@ -1,3 +1,4 @@
+/* Base Reset */
 * {
   margin: 0;
   padding: 0;
@@ -5,13 +6,12 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Inter", sans-serif;
   background: #0b0218;
   color: #fff;
 }
-
 /* Header */
-.header {
+.navbar {
   background: #120428;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -38,13 +38,66 @@ body {
 
 .btn-subscribe {
   background: linear-gradient(90deg, #ff4ecd, #7b5cff);
-  padding: 8px 16px;
-  border-radius: 20px;
+  padding: 8px 18px;
+  border-radius: 999px;
   text-decoration: none;
   color: #fff;
-  font-size: 16px;
+  font-size: 14px;
+  font-weight: 600;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: all 0.25s ease;
 }
 
+
+.btn-subscribe .arrow {
+  display: inline-block;
+  transition: transform 0.25s ease;
+}
+
+
+.btn-subscribe:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(255, 78, 205, 0.4);
+}
+
+
+.btn-subscribe:hover .arrow {
+  transform: translateX(4px);
+}
+
+
+.btn-subscribe:active {
+  transform: scale(0.96);
+}
+
+
+/* Hamburger */
+#nav-toggle {
+  display: none;
+}
+
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+  color: #fff;
+}
+
+#nav-toggle:checked~.menu {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 64px;
+  left: 0;
+  right: 0;
+  background: #120428;
+  padding: 16px;
+  text-align: center;
+  gap: 12px;
+}
+
+/* Large Device */
 @media (min-width: 992px) {
   .menu {
     display: flex;
@@ -56,4 +109,14 @@ body {
     text-decoration: none;
     font-size: 14px;
   }
+
+    .hamburger {
+      display: none;
     }
+  
+    #nav-toggle:checked~.menu {
+      position: static;
+      flex-direction: row;
+      padding: 0;
+    }
+ }
