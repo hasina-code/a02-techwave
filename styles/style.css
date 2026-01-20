@@ -461,7 +461,7 @@ background: rgba(35, 14, 61, 1);
 
 
 .footer {
-  background-image: url( /assets/hero-bg.png);
+  background: url(/assets/hero-bg.png );
  
   background-repeat: no-repeat;
  
