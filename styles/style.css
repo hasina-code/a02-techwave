@@ -456,6 +456,86 @@ body {
 .social-links a:hover img {
   transform: translateY(-4px);
 }
+
+
+
+.footer {
+  background-image: url( /assets/hero-bg.png);
+ 
+  background-repeat: no-repeat;
+ 
+  background-size: cover;
+ 
+  background-position: center;
+
+  background-attachment: scroll;
+  background-position: center center ;
+    
+
+  color: #fff;
+  padding: 60px 16px
+}
+
+.footer .container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Brand Heading */
+.footer-brand h2 {
+ 
+  height: 60px;
+  font-size: 42px;
+  margin-bottom: 24px;
+ 
+  
+}
+
+.logo-brand span {
+  color: #ff4ecd;
+}
+
+/* Platform Links */
+.footer-brand a {
+  display: inline-flex;
+  align-items: center;
+  gap: 40px;
+  margin: 8px 12px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.footer-brand a img {
+  width: 24px;
+  height: 24px;
+}
+
+/* Hover effect for links */
+.footer-brand a:hover {
+  color: #ff4ecd;
+  /* highlight color on hover */
+  transform: translateY(-2px);
+}
+
+/* Copyright */
+.footer-copy {
+  margin-top: 40px;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+
+
+
+
+
+
+
+
+
 /* Small Devices: ≤576px */
 @media (max-width: 576px) {
   .menu {
@@ -509,51 +589,73 @@ body {
     
  .feature-card h3 {
    font-size: 18px
-
-    .feature-card p {
-       font-size: 13px;
-    }
-
-
-
-
- .host h1 {
-   font-size: 32px;
-   margin-bottom: 24px;
- }
-
- .host-wrapper {
-   flex-direction: column;
- 
-   gap: 20px;
-   text-align: center;
- }
-
- .host-image img {
-   width: 180px;
- }
-
- .host-info h2 {
-   font-size: 24px;
- }
-
- .host-info p {
-   font-size: 14px;
-   line-height: 1.6;
-   margin-bottom: 16px;
- }
-
- .social-links {
-   justify-content: center;
-   gap: 12px;
- }
-
- .social-links img {
-   width: 24px;
- }
-
-
 }
+
+
+
+.feature-card p {
+  font-size: 13px;
+}
+
+
+
+
+.host h1 {
+  font-size: 32px;
+  margin-bottom: 24px;
+}
+
+.host-wrapper {
+  flex-direction: column;
+
+  gap: 20px;
+  text-align: center;
+}
+
+.host-image img {
+  width: 180px;
+}
+
+.host-info h2 {
+  font-size: 24px;
+}
+
+.host-info p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.social-links {
+  justify-content: center;
+  gap: 12px;
+}
+
+.social-links img {
+  width: 24px;
+}
+
+
+
+
+.thumb .play {
+  width: 50px;
+  height: 50px;
+}
+
+.thumb .play img {
+  width: 70%;
+}
+
+
+
+  .footer {
+    background-position: center center; 
+    padding: 40px 16px;
+  
+}
+
+
  
 }
 
