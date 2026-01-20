@@ -246,7 +246,7 @@ body {
 }
 
 .stat {
-  font-weight: 900px;
+  font-weight: 900;
   line-height: 58px;
   font-size: 48px;
   color: #00ff88;
@@ -254,11 +254,96 @@ body {
 
 
 
+/* Featured Episodes Section */
 
 
 
 
-/* Small Devices ≤576px */
+
+
+.featured {
+  padding: 60px 0;
+}
+
+.featured h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.episode-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.episode-card {
+  background: #120428;
+  padding: 16px;
+  border-radius: 16px;
+  transition: transform 0.3s ease;
+}
+
+.episode-card:hover {
+  transform: translateY(-6px);
+}
+
+.thumb {
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.thumb img {
+  width: 100%;
+  display: block;
+}
+
+
+
+.thumb .play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 70px;
+  height: 70px;
+  background:var(--Linear, linear-gradient(47.64deg, rgba(247, 233, 63, 1), rgba(251, 9, 180, 1), rgba(145, 0, 248, 1)));
+  
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.thumb .play img {
+  width: 100%;
+}
+
+.episode-card h3 {
+  margin: 16px 0 8px;
+  font-size: 18px;
+}
+
+.episode-card p {
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+.time {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+
+
+
+
+/* Small Devices: ≤576px */
 @media (max-width: 576px) {
   .menu {
     display: none;
@@ -268,48 +353,44 @@ body {
     display: block;
   }
 
-    .Banner-content {
-      padding: 20px;
-    }
-  
-    .Banner-buttons {
-      flex-direction: column;
-      gap: 12px;
-    }
-  
-    .title {
-      font-size: 32px;
-    }
-  
-    .subtitle {
-      font-size: 14px;
-    }
-
-
-        .stats {
-          grid-template-columns: repeat(2, 1fr);
-          gap: 16px;
-        }
-    
-      
- 
-}
-
-
-/* Large Devices ≥992px */
-@media (min-width: 992px) {
-  .menu {
-    display: flex;
-    gap: 24px;
-  }
-
-  .hamburger {
+  .btn-subscribe {
     display: none;
   }
 
-    .stats {
-      grid-template-columns: repeat(4, 1fr);
-      gap: 24px;
-    }
+  .stats {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .Banner-content {
+    padding: 16px;
+  }
+
+  .mic-wrap {
+    width: 140px;
+    height: 140px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  .Banner-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+
+
+
 }
+
+
+
+
+
 
