@@ -349,7 +349,6 @@ body {
   transform: translateY(-5px);
   box-shadow: 0 12px 25px rgba(255, 78, 205, 0.3);
 }
-
 /* Featured Episodes Section */
 
 
@@ -643,7 +642,6 @@ background-image: url(/assets/hero-bg.png);
 .feature-card p {
   font-size: 14px;
 }
-
 
 
 
